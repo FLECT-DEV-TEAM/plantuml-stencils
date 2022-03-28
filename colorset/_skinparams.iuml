@@ -68,8 +68,6 @@ skinparam Database {
   BackgroundColor $BackGroundColor
 }
 
-skinparam DiagramBorderColor $LineColor
-
 skinparam Entity {
   BorderColor $LineColor
   BackgroundColor $BackGroundColor
