@@ -136,6 +136,8 @@ skinparam Storage {
   BackgroundColor $BackGroundColor
 }
 
+skinparam SwimlaneBorderColor $LineColor
+
 skinparam Usecase {
   BorderColor $LineColor
   BackgroundColor $BackGroundColor
