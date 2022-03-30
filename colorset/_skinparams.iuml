@@ -103,6 +103,11 @@ skinparam Package {
   BackgroundColor transparent
 }
 
+skinparam Partition {
+  BorderColor $LineColor
+  BackgroundColor transparent
+}
+
 skinparam Queue {
   BorderColor $LineColor
   BackgroundColor $BackGroundColor
