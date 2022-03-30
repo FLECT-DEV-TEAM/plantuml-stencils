@@ -5,15 +5,13 @@ skinparam LineType ortho
 legend top left
     凡例
     |= 説明 |= 記号 |
-    | 0 or 1 | <$BackGroundColor> --o\| |
-    | 1のみ  | <$BackGroundColor> --\|\| |
-    | 0以上  | <$BackGroundColor> --o{ |
-    | 1以上  | <$BackGroundColor> --\|{ |
+    | 0 or 1 | <transparent> --o\| |
+    | 1のみ  | <transparent> --\|\| |
+    | 0以上  | <transparent> --o{ |
+    | 1以上  | <transparent> --\|{ |
     ----
     M = Master
     T = Transaction
     ----
     ● = 必須項目
-    ----
-    ※ 各項目は重要なもの以外を省略している
 end legend

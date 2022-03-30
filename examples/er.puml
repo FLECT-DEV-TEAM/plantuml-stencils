@@ -1,0 +1,43 @@
+@startuml er-example
+!define uml https://raw.githubusercontent.com/FLECT-DEV-TEAM/plantuml-stencils/main
+!include uml/colorset/ocean-blue.iuml
+!include uml/colorset/_skinparams.iuml
+!include uml/stencils/er.iuml
+
+package "DataObjects" {
+  entity "商品階層" as product_levels _Master {
+    * 部門コード
+      部門名称
+      カテゴリーコード
+      カテゴリー名称
+
+  }
+
+  entity "品番" as categories _Master {
+    * 商品階層ID
+    * ブランド名
+      開発コンセプト
+  }
+
+  entity "商品" as products _Master {
+    * 品番ID
+    * 商品名
+      JANコード
+      価格
+  }
+
+  entity "売上" as sales _Transaction {
+    * 商品ID
+    * ユーザーID
+    * 売上日
+  }
+  note bottom of products
+    ノート例
+    折返しも可
+  end note
+}
+
+product_levels ||-|{ categories
+categories ||-|{ products
+products |o-|{ sales
+@enduml

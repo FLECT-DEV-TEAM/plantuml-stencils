@@ -1,0 +1,12 @@
+@startuml sequence-example
+!define uml https://raw.githubusercontent.com/FLECT-DEV-TEAM/plantuml-stencils/main
+!include uml/colorset/ocean-blue.iuml
+!include uml/colorset/_skinparams.iuml
+
+actor Bob
+participant Alice
+participant WhiteRabbit
+Alice->Bob: Authentication Request
+Bob->Alice: Authentication Response
+Bob->WhiteRabbit: Log transaction
+@enduml
